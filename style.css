@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#progress-bar {
+    appearance: none;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2em;
+    width: 50vw;
+    height: 2em;
+    color: #000000;
+    border: solid .5em;
+}
+
+#progress-bar::-moz-progress-bar {
+  background-color: greenyellow; 
+}
+
+#return {
+    border-radius: .5em;
+    width: 10em;
+    font-size: 2em;
+    height: 2em;
+    border: none;
+    background-position: center;
+    background-size: 90%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#winning-screen {
+    opacity: 0;
+    pointer-events: none;
+    border: solid 1em yellow;
+    box-shadow: 1em 1em gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgb(255, 255, 105);
+    width: 50vw;
+    height: 40vh;
+    padding: 4em;
+    
+    border-radius: 1em;
+}
+
+#winning-screen h1 {
+    color: white;
+    font-size: 6em;
+    opacity: 1;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    background-color: grgb(166, 166, 166);
+}
+
+#answer-input {
+    box-shadow: .25em .25em gray;
+    width: 50vw;
+    height: 1em;
+
+    border-radius: 4em;
+    border: solid .15em black;
+    padding: .5em;
+    position: absolute;
+    bottom: 10%;
+    font-size: 3em;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color .25s ease-in, border-color .25s ease-in;    
+}
+
+#question-display {
+    text-shadow: .1em .1em ligh;
+    font-family:sa;
+    text-decoration: underline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: auto;
+    font-size: 4em;
+    text-align: center;
+}
+
+#instruction {
+    border: solid .25em;
+    box-shadow: 1em 1em gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgb(166, 166, 166);
+    width: 50vw;
+    height: 40vh;
+    padding: 4em;
+    backdrop-filter: blur(10px);
+    
+    border-radius: 1em;
+}
+
+#instruction p {
+    color: white;
+    font-size: 2em;
+    opacity: 1;
+    width: 50vw;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: grgb(166, 166, 166);
+}
+
+#close-instruction {
+    border: solid .25em;
+    width: 4em;
+    height: 4em;    
+    position: relative;
+    top: 0;
+    background-image: url("/images/black-x.png");
+    background-size: 100%;
+    border-radius: 1em;
+    background-color: rgb(213, 213, 213);
+    background-position: center;
+}
