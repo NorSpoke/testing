@@ -85,7 +85,7 @@ closeInstruction.addEventListener('click', function(){
 })
 
 returnButton.addEventListener('click', function(){
-    window.location.href = "../homePage/levelsPage.html";
+    window.location.href = "../levelsPage.html";
 })
 
 input.addEventListener('keydown', function (event) {
@@ -117,3 +117,4 @@ input.addEventListener('keydown', function (event) {
 });
 
 randomQuestion()
+
