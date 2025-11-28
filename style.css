@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url('topography.svg');*/
+    background-color: #1e1e1e;
+}
+
+.card {
+    width: 25%;
+    height: 70%;
+    
+    background-color: rgb(255, 255, 255);
+    
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.card h1 {
+    position: absolute;
+    font-size: 4rem;
+    background-color: #939393;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.info-container {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    /*background-color: gray;*/
+
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "box-1 box-2 box-3"
+    "box-1 box-4 box-3"
+    "box-1 box-4 box-5"
+    ;
+}
+.transparent {
+    opacity: 0;
+}
+.info-card {
+    background-color: #383838;
+    border-radius: 1em;
+}
+    
+.light {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+#light-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 100vw;
+}
+
+#startingLight {
+    
+}
