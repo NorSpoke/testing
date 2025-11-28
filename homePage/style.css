@@ -9,9 +9,9 @@ body {
 
 .level-button {
     border-radius: 1rem;
-    width: 20vw;
-    height: 5vw;
-    font-size: 4em;
+    width: 16rem;
+    height: 2em;
+    font-size: 2rem;
     position: absolute;
     transform: translate(-50%, -50%);
     bottom: 10%;
